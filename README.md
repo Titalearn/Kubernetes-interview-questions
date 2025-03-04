@@ -1,7 +1,7 @@
 # Kubernetes-interview-questions
 You will learn the top 20 kubernetes questions.
 # Here are some possible answers to the Kubernetes questions listed below:
-A *Was your Kubernetes experience ON-prem or managed Kubernetes?*
+A * Was your Kubernetes experience ON-prem or managed Kubernetes?*
  My experiences with Kubernetes include both on-premises deployments and managed solutions like Amazon EKS (Elastic Kubernetes Service) and Google Kubernetes Engine.Managed environments often simplify cluster management and offer automatic updates, while on-premises deployments allow full control over the infrastructure.
 
 B * What services are available on Kubernetes?*
@@ -29,7 +29,7 @@ used to establish secure connections over the network. TLS is actually the succe
 providing improved security and more robust features. In practice, the term SSL
 is often used interchangeably with TLS, although TLS is the current version.
 
-G *How do you differentiate between development and production images?
+G * How do you differentiate between development and production images?
 
 Development images can include specific tags, for example myapp:dev
 vs. myapp:prod. Additionally, we can have different configurations for the
@@ -125,7 +125,7 @@ AWS offers several types of load balancers, each designed for different use case
    Uses: Suitable for simple load balancing of HTTP/HTTPS and TCP traffic across multiple EC2 instances². It's generally recommended to use ALB or NLB for new applications, but CLB can still be useful for legacy applications.
 Each type of load balancer has its specific strengths and is chosen based on the requirements of your application, such as the type of traffic, performance needs, and specific features required.
 
-K  *How does Kubernetes handle security and access control?*
+K  * How does Kubernetes handle security and access control?*
    Kubernetes uses Role-Based Access Control (RBAC) to regulate access to the cluster's resources. It defines roles with specific permissions and assigns them to users or groups. Additionally, Kubernetes manages security through network policies, pod security policies, and service accounts.
 
 
