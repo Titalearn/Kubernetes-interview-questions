@@ -125,7 +125,72 @@ AWS offers several types of load balancers, each designed for different use case
    Uses: Suitable for simple load balancing of HTTP/HTTPS and TCP traffic across multiple EC2 instances². It's generally recommended to use ALB or NLB for new applications, but CLB can still be useful for legacy applications.
 Each type of load balancer has its specific strengths and is chosen based on the requirements of your application, such as the type of traffic, performance needs, and specific features required.
 
+K  *How does Kubernetes handle security and access control?*
+   Kubernetes uses Role-Based Access Control (RBAC) to regulate access to the cluster's resources. It defines roles with specific permissions and assigns them to users or groups. Additionally, Kubernetes manages security through network policies, pod security policies, and service accounts.
+
+
+L * What are some best practices you have used in  securing a Kubernetes cluster?
+
+ 1 -Implementing RBAC to control access
+ 2 -Using network policies to restrict traffic
+ 3 -Regularly updating and patching Kubernetes components
+ 4 -Using secure container images
+ 5 - Encrypting sensitive data at rest and in transit
+ 6 -Monitoring and logging cluster activity
+
+M * How can you secure communication between Kubernetes components?* 
+
+1 -Secure communication between Kubernetes components can be achieved by:
+
+2 -Using TLS for all communication
+
+3 -Enabling mutual TLS authentication
+
+4 -Encrypting sensitive data
+
+5 -Implementing network policies to control traffic flow  
+
+
+N * Can you explain the difference between ConfigMaps and Secrets in Kubernetes? *
+  ConfigMaps store non-confidential configuration data, while Secrets store sensitive information, such as passwords and API keys. Secrets provide additional security measures, such as encryption at rest.
+
+  
+O *How do you update a ConfigMap, and what happens to the Pods using it?*
+  You can update a ConfigMap using kubectl apply with an updated YAML file. Pods using the ConfigMap will not automatically reflect changes; they may need to be restarted to pick up the new configuration.
+
+
+P *Can you explain the concept of Cluster Autoscaler in Kubernetes?*
+
+Cluster Autoscaler adjusts the size of the Kubernetes cluster by adding or removing nodes based on the resource requirements of pending pods. It ensures that the cluster has enough nodes to run all scheduled pods.
 
 
 
+Q * 
+ What are the security considerations when connecting EKS to a database?
+
+ Security considerations include:
+1 - Using secure network connections (TLS/SSL)
+2 -Implementing network policies and security groups to restrict access
+3 -Using encryption for data at rest and in transit
+4 -Managing database credentials securely with Kubernetes secrets
+5 -Regularly monitoring and auditing access logs
+
+R * What are the steps to configure security groups for allowing traffic from EKS to a database? * 
+
+Create a security group for the database
+
+1 -Allow inbound traffic on the database port (e.g., 5432 for PostgreSQL) from the EKS security group
+2 -Attach the security group to the database instance
+3 -Ensure the EKS nodes or pods are associated with the correct security group
+
+
+
+S* What are the problems you recently faced while maintaining your kubernetes cluster and how did you resolve them?*
+
+tell them about your personal eperience
+
+
+T* What was your main task as a kubernetes administrator *
+
+Tell them your personal experience.
 
