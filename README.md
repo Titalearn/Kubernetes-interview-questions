@@ -1,6 +1,6 @@
 # Kubernetes-interview-questions
 You will learn the top 20 kubernetes questions.
-# Here are some possible answers to the Kubernetes questions you listed:
+# Here are some possible answers to the Kubernetes questions listed below:
 A *Was your Kubernetes experience ON-prem or managed Kubernetes?*
  My experiences with Kubernetes include both on-premises deployments and managed solutions like Amazon EKS (Elastic Kubernetes Service) and Google Kubernetes Engine.Managed environments often simplify cluster management and offer automatic updates, while on-premises deployments allow full control over the infrastructure.
 
