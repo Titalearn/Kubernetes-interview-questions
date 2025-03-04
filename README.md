@@ -108,3 +108,24 @@ To expose your application to a service, you typically follow these steps, espec
 These steps will expose your application to the outside world, allowing users to access it via the external IP address or DNS name provided by the load balancer⁴⁵.
 
 
+J * Name the types of load balancer and explain their uses ? *
+
+AWS offers several types of load balancers, each designed for different use cases:
+1. Application Load Balancer (ALB):
+   Description: Operates at the application layer (Layer 7) of the OSI model.
+   Uses: Ideal for HTTP and HTTPS traffic, providing advanced request routing based on content. It supports features like host-based and path-based routing, WebSockets, and HTTP/2². It's perfect for microservices and container-based applications.
+2. Network Load Balancer (NLB):
+     Description: Operates at the transport layer (Layer 4) of the OSI model.
+     Uses: Designed for high performance and low latency, it can handle millions of requests per second while maintaining ultra-low latencies. It's suitable for TCP, UDP, and TLS traffic². Ideal for applications requiring extreme performance and static IP addresses.
+3. Gateway Load Balancer (GWLB):
+     Description: Combines the functions of a load balancer and a gateway.
+     Uses: Simplifies the deployment, scaling, and management of third-party virtual appliances like firewalls, intrusion detection and prevention systems, and deep packet inspection systems². It provides a single entry and exit point for traffic.
+4. Classic Load Balancer (CLB):
+   Description: The original load balancer provided by AWS, operating at both the application and transport layers.
+   Uses: Suitable for simple load balancing of HTTP/HTTPS and TCP traffic across multiple EC2 instances². It's generally recommended to use ALB or NLB for new applications, but CLB can still be useful for legacy applications.
+Each type of load balancer has its specific strengths and is chosen based on the requirements of your application, such as the type of traffic, performance needs, and specific features required.
+
+
+
+
+
