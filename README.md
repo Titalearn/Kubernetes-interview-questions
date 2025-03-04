@@ -155,11 +155,11 @@ N * Can you explain the difference between ConfigMaps and Secrets in Kubernetes?
   ConfigMaps store non-confidential configuration data, while Secrets store sensitive information, such as passwords and API keys. Secrets provide additional security measures, such as encryption at rest.
 
   
-O *How do you update a ConfigMap, and what happens to the Pods using it?*
+O * How do you update a ConfigMap, and what happens to the Pods using it?*
   You can update a ConfigMap using kubectl apply with an updated YAML file. Pods using the ConfigMap will not automatically reflect changes; they may need to be restarted to pick up the new configuration.
 
 
-P *Can you explain the concept of Cluster Autoscaler in Kubernetes?*
+P * Can you explain the concept of Cluster Autoscaler in Kubernetes?*
 
 Cluster Autoscaler adjusts the size of the Kubernetes cluster by adding or removing nodes based on the resource requirements of pending pods. It ensures that the cluster has enough nodes to run all scheduled pods.
 
